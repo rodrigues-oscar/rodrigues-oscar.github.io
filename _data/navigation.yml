@@ -10,3 +10,11 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: /projects/
+  - title: "Certifications"
+    url: /certifications/
+  - title: "Resume"
+    url: "/assets/resume/Oscar_Rodrigues_Resume.pdf"
