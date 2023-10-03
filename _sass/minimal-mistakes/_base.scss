@@ -195,12 +195,12 @@ figure {
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 0.1em;
 
   img,
   iframe,
   .fluid-width-video-wrapper {
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
   }
 
   img {
@@ -244,10 +244,12 @@ figure {
 /* Figure captions */
 
 figcaption {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.1em;
   color: $muted-text-color;
   font-family: $caption-font-family;
   font-size: $type-size-6;
+  width: 100%;
+  text-align: right;
 
   a {
     -webkit-transition: $global-transition;
