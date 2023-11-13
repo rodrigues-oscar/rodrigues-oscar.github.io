@@ -5,12 +5,7 @@ title: Welcome to my portfolio!
 permalink: /
 ---
 
-<figure style="width: 425px" class="align-right">
-  <img src="/assets/images/profilepic.png" alt="">
-</figure>
-
-My name is Oscar Rodrigues and I am an aspiring data scientist! I have a combined 3 years of experience under my belt working as an analyst in Business Intelligence and Operations. 
-I have a strong foundation in machine learning, statistical analysis, and data visualization. Aside from my technical skills, I am committed to fostering effective communication, and ensuring that insights are clear and meaningul to both technical and non-technical stake holders.
+![image-right](/assets/images/profilepic.png){: .align-right} My name is Oscar Rodrigues and I am an aspiring data scientist! I have a combined 3 years of experience under my belt working as an analyst in Business Intelligence and Operations. I have a strong foundation in machine learning, statistical analysis, and data visualization. Aside from my technical skills, I am committed to fostering effective communication, and ensuring that insights are clear and meaningul to both technical and non-technical stake holders.
 
 I'm currently working at Stellantis (formerly known as Chrysler) as an ADAS Operations Engineer - Team Lead. My team and I work together to manage the operational design domain for Stellantis' fleet of autonomous vehicles with our main goal being the safety and satisfaction of our customers. As a data enthusiast, I take a data-driven approach to solving problems ranging from predicting construction hotspots to optimizing internal tools and processes.
 
