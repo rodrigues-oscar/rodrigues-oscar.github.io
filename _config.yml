@@ -10,105 +10,33 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Oscar's Portfolio"
 title_separator          : "-"
-subtitle                 : "Aspiring Data Scientist | Transforming Data into Actionable Insights"
+# subtitle                 : " "
 name                     : "Oscar Rodrigues"
 description              : "This is my portfolio!"
 url                      : "https://rodrigues-oscar.github.io"
-baseurl                  : ""
+# baseurl                  : " "
 repository               : "rodrigues-oscar/rodrigues-oscar.github.io"
 teaser                   : "/assets/images/headshot_circle.png"
-logo                     : "/assets/images/headshot_circle.png"
-masthead_title           : "Oscar Rodrigues"
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
-lunr:
-  search_within_pages    : # true, false (default)
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
-
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-# Analytics
-analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+logo                     : "/assets/images/logo.png"
+masthead_title           : " "
 
 
 # Site Author
-Oscar Rodrigues:
+author:
   name        : "Oscar Rodrigues"
   avatar      : "/assets/images/headshot_circle.png"
-  bio         : "NEED TO WRITE A BIO"
+  bio         : ""
   location    : "Ontario, Canada"
-  email       : "rodrigue-oscar@outlook.com" 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
@@ -119,6 +47,7 @@ Oscar Rodrigues:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rodrigues-oscar"
+
 
 # Site Footer
 footer:
@@ -212,6 +141,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
 
 # mimic GitHub Pages with --safe
 whitelist:
