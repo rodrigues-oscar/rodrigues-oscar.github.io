@@ -3,20 +3,12 @@ layout: single
 classes: wide
 title: Welcome to my portfolio!
 permalink: /
+author_profile: true
 ---
+Hello! My name is Oscar and I'm an aspiring data scientist!
 
-<figure style="width: 425px" class="align-right">
-  <img src="/assets/images/profilepic.png" alt="">
-</figure>
+I have a combined 3 years of experience working as an analyst in Business Intelligence and Operations. I have a strong foundation in data analytics, statistics, and Python/SQL programming from my education as an Electrical Engineering graduate.
 
-My name is Oscar Rodrigues and I am an aspiring data scientist! I have a combined 3 years of experience working as an analyst in Business Intelligence and Operations. I have a strong foundation in machine learning, statistical analysis, and data visualization. Aside from my technical skills, I am committed to fostering effective communication, and ensuring that insights are clear and meaningful to both technical and non-technical stakeholders.
-{: style="text-align: justify;"}
+I currently work at Stellantis as an ADAS Operations Engineer where I lead the effort to maintain the operational design domain of our autonomous vehicle fleet. Previously, I worked at SPM Automation as a Data Analyst, where I implemented the entire data warehousing process - all the way from data collection to presenting insights to technical and non-technical stakeholders.
 
-I currently work at Stellantis (formerly known as Chrysler) as an ADAS Operations Engineer - Team Lead. My team and I work together to manage the operational design domain for Stellantis’ fleet of autonomous vehicles with our main goal being the safety and satisfaction of our customers. As a data enthusiast, I take a data-driven approach to solving problems ranging from predicting construction hotspots to optimizing internal tools and processes.
-{: style="text-align: justify;"}
-
-One of my notable achievements at Stellantis includes when I leveraged my advanced programming skills in Python to develop a predictive model, boasting a 93.4% model accuracy, that streamlined decision-making processes. The implementation of this automation solution led to an annual savings of $650K, increased productivity, and employee morale.
-{: style="text-align: justify;"}
-
-In my previous role, I worked at SPM Automation, a company that builds plastics-welding machines, as a Data Analyst. I designed and developed ETL pipelines that collect and upload machine data to AWS S3 buckets. From there, we were able to use Tableau to build visualization dashboards for our clients. My most notable achievement in this role was leveraging my SQL skills to query our databases and identify unauthorized operator usage, saving the company ~$1.3M in warranty claims.
-{: style="text-align: justify;"}
+In my free time, I'm focusing on learning more about machine learning and deep learning by challenging myself with online certifcations and specializations.
