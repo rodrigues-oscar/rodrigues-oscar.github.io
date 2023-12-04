@@ -14,7 +14,7 @@ excerpt: ""
 
 # About Me #
 
-Hello! My name is Oscar and I'm an aspiring data scientist!
+Hello! My name is Oscar and I'm a data analyst / data scientist!
 
 I have a combined 3 years of experience working as an analyst in Business Intelligence and Operations. I have a strong foundation in data analytics, statistics, and Python/SQL programming from my education as an Electrical Engineering graduate. In my free time, I'm focusing on learning more about machine learning and deep learning by challenging myself with online certifcations and specializations.
 
