@@ -12,6 +12,19 @@ header:
   caption: "Photo credit: [Unsplash](https://unsplash.com/photos/xrVDYZRGdw4)"
 excerpt: "A compilation showcasing the challenging tasks I've tackled"
 ---
+
+# Personal #
+
+## Taylor Swift Song Data Analysis ##
+
+![image-center](/assets/images/taylor_swift.png){: .align-center}
+
+* Extracted data from the Spotify API using Python scripting to gather comprehensive song attributes.
+* Cleaned raw data by handling missing values, removing duplicates, and refining the dataset to enhance its quality and accuracy.
+* Performed exploratory data analysis and created insightful visualizations using Matplotlib to identify trends in Taylor Swift's music.
+
+Click <a href="https://github.com/rodrigues-oscar/Taylor-Swift-Song-Analysis">here</a> to check out the GitHub repository for this project.
+
 # Professional #
 
 ## Quantifying Vehicle Steering Discrepancies ##
@@ -31,9 +44,3 @@ excerpt: "A compilation showcasing the challenging tasks I've tackled"
 * Leveraged BeautifulSoup to web scrape construction-related data from Department of Transportation (DOT) websites across states, ensuring real-time access to critical information.
 * Applied data wrangling techniques to process and clean the acquired data, ensuring its accuracy and consistency for further analysis.
 * Implemented a MySQL database system to store and manage construction data, enabling precise identification and disabling of potentially hazardous areas available to the autonomous driving system.
-
-# Personal #
-
-Hang tight, this section is still a work in progress!
-{: .notice--success}
-
