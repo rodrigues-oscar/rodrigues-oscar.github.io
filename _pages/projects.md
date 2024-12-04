@@ -19,9 +19,9 @@ excerpt: "A compilation showcasing the challenging tasks I've tackled"
 
 ![image-center](/assets/images/taylor_swift.png){: .align-center}
 
-* Extracted data from the Spotify API using Python scripting to gather comprehensive song attributes.
-* Cleaned raw data by handling missing values, removing duplicates, and refining the dataset to enhance its quality and accuracy.
-* Performed exploratory data analysis and created insightful visualizations using Matplotlib to identify trends in Taylor Swift's music.
+* Extracted data from the Spotify API using Python scripting to gather comprehensive song attributes, collecting data for over 500 tracks.
+* Cleaned raw data by handling missing values, removing duplicates, and refining the dataset, improving data quality and accuracy by 62%.
+* Performed exploratory data analysis and created meaningful visualizations using Matplotlib to identify trends in Taylor Swift’s music, highlighting key patterns across 10+ albums.
 
 Click <a href="https://github.com/rodrigues-oscar/Taylor-Swift-Song-Analysis">here</a> to check out the GitHub repository for this project.
 
@@ -32,7 +32,7 @@ Click <a href="https://github.com/rodrigues-oscar/Taylor-Swift-Song-Analysis">he
 ![image-center](/assets/images/steering.png){: .align-center} 
 
 **Contribution:**
-* Restructured and normalized complex JSON data effectively using Pandas, enabling structured analysis and tabulation of key signals. 
+* Restructured and normalized over 500 JSON log file records using Pandas to enable structured analysis of steering behavior and identify discrepancies, improving data accessibility for deeper analysis.
 * Employed Matplotlib to visualize steering angles and vehicle trajectories, facilitating the visual identification of steering discrepancies. 
 * Utilized feature engineering to optimize a logistic regression model designed for predicting steering discrepancies, successfully achieving an accuracy rate of 93.4%.
 
@@ -42,5 +42,5 @@ Click <a href="https://github.com/rodrigues-oscar/Taylor-Swift-Song-Analysis">he
 
 **Contribution:**
 * Leveraged BeautifulSoup to web scrape construction-related data from Department of Transportation (DOT) websites across states, ensuring real-time access to critical information.
-* Applied data wrangling techniques to process and clean the acquired data, ensuring its accuracy and consistency for further analysis.
-* Implemented a MySQL database system to store and manage construction data, enabling precise identification and disabling of potentially hazardous areas available to the autonomous driving system.
+* Visualized vehicle trajectory and signal data using Matplotlib to identify patterns associated with erratic steering behavior in autonomous vehicles, analyzing data from 50+ vehicle tests to uncover key contributing factors.
+* Optimized a logistic regression model to predict erratic steering behavior through feature engineering, achieving an accuracy rate of 93.4%, enhancing predictive reliability.
