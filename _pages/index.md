@@ -14,13 +14,15 @@ excerpt: ""
 
 # About Me #
 
-Hello! My name is Oscar and I'm a data analyst / data scientist!
+Hello! My name is Oscar, and I’m a Data Analyst and aspiring Data Scientist.
 
-I have a combined 3 years of experience working as an analyst in Business Intelligence and Operations. I have a strong foundation in data analytics, statistics, and Python/SQL programming from my education as an Electrical Engineering graduate. In my free time, I'm focusing on learning more about machine learning and deep learning by challenging myself with online certifcations and specializations.
+I bring 4 years of experience as an analyst in Business Intelligence and Operations, where I’ve honed my skills in data analytics, statistical analysis, and Python/SQL programming. My background in Electrical Engineering has provided me with a strong technical foundation, which I continue to build upon through professional development.
+
+In my free time, I’m diving deeper into machine learning and deep learning, taking on online certifications and specializations to expand my expertise and tackle new challenges in the field.
+
+Feel free to reach out—I’m always excited to connect and collaborate!
 
 # Why am I passionate about Data Science? #
 
-* **Exploring New Industries**: When working a project, you need to learn more about the company and the industry to really understand the data you're working with. I find that after I'm done working a project, I've learnt so much more about that industry and have a sense of appreciation for people within that field and the intricacies of their jobs.
-* **Data Cleaning**: Not sure if its just me but there's nothing more satifying than a set of nicely cleaned and formatted data. Even though sometimes it can be time consuming, completing the task of data cleaning just feels very rewarding - kinda like sitting down on your couch after a long day of doing chores.
-
-If you share a passion for data science similar to myself, I'd love to connect!
+* **Exploring New Industries**: Every project is an opportunity to dive into a new company or industry, helping me better understand the data and its context. By the time a project is complete, I’ve gained valuable insights into the industry and developed a deep appreciation for the people working in that field and the complexities of their roles.
+* **The Art of Data Cleaning**: There’s something uniquely satisfying about transforming messy, unstructured data into a gorgeous, well-organized dataset. While it can be a time-intensive process, the reward of seeing clean, usable data feels as gratifying as relaxing after a productive day—it’s the foundation of meaningful analysis and impactful insights.
