@@ -15,45 +15,49 @@ header:
 excerpt: "Highlighting my commitment towards continuing education"
 ---
 
-# Completed Certifications: #
+## Currently In Progress
 
-## DeepLearning.AI Machine Learning Specialization ## 
+### DeepLearning.AI Deep Learning Specialization
 
-![image-left](/assets/images/deeplearningaimachinelearning.png){:.align-left} 
+![image-center](/assets/images/deeplearningaideeplearning.png){:.align-center}
 
-I completed the DeepLearning.AI Machine Learning Specialization on Coursera in July 2024. This program provided a strong foundation in AI concepts and hands-on machine learning skills. It covered essential topics like supervised and unsupervised learning, as well as techniques to optimize models for various tasks. The courses were taught by Andrew Ng, an adjunct professor at Stanford University, whose clear and engaging teaching style made the learning process incredibly rewarding. I’m excited to apply these skills to real-world challenges and continue developing my expertise in the field.
+Currently pursuing this advanced series on neural networks, which dives into core deep learning architectures and training strategies. It includes practical implementation of CNNs, RNNs, LSTMs, and Transformers using TensorFlow and Python.
 
-To view my certificate of completion awarded to me by Coursera and DeepLearning.AI, please click [here](/assets/certificates/deeplearningaimachinelearningspecializationcertificate.pdf).
+By completing hands-on assignments across applications like image recognition, NLP, and neural style transfer, I'm deepening my understanding of model optimization, architecture design, and training dynamics.
 
-Skills learned include: `Logistic Regression`, `Artifical Neural Networks`, `Linear Regression`, `Decision Trees`, `Recommender Systems`,  `Gradient Descent`, `Supervised Learning`, `Tensorflow`, `Xgboost`, `Anomaly Detection`, `Unsupervised Learning`, `Reinforcement Learning`, `Collaborative Filtering`.
+Skills being developed: `TensorFlow`, `Convolutional Neural Networks (CNNs)`, `Recurrent Neural Networks (RNNs)`, `Sequence Modeling`, `Natural Language Processing (NLP)`, `Neural Style Transfer`, `Transformers`, `HuggingFace`, `Dropout`, `Batch Normalization`, `Hyperparameter Tuning`  
 {: .notice--info}
 
 ---
 
-## IBM Data Science Professional Certificate ##
+## Completed Certifications
+
+### DeepLearning.AI Machine Learning Specialization
+
+![image-left](/assets/images/deeplearningaimachinelearning.png){:.align-left}
+
+Completed in July 2024, this specialization taught by Andrew Ng covers foundational and advanced machine learning techniques with a focus on real-world application. I gained hands-on experience developing and optimizing models using Python and industry-standard libraries.
+
+Key learnings include: supervised learning algorithms (e.g., linear and logistic regression), tree-based models, ensemble techniques like XGBoost, recommender systems, anomaly detection, and core neural network concepts using TensorFlow.
+
+To view my DeepLearning.AI Machine Learning Specialization certificate of completion awarded by Coursera and DeepLearning.AI, please click [View Certificate](/assets/certificates/deeplearningaimachinelearningspecializationcertificate.pdf).
+
+Skills learned include: `Supervised Learning`, `Unsupervised Learning`, `Reinforcement Learning`, `Gradient Descent`, `Logistic Regression`, `Linear Regression`, `Decision Trees`, `TensorFlow`, `XGBoost`, `Recommender Systems`, `Collaborative Filtering`, `Anomaly Detection`, `Artificial Neural Networks`  
+{: .notice--info}
+
+---
+
+### IBM Data Science Professional Certificate
 
 ![image-right](/assets/images/ibmdatascience.png){:.align-right}
 
-I earned the IBM Data Science Professional Certificate on Coursera in September 2023, completing a comprehensive and hands-on journey into the field of data science. This program provided in-depth training in data analysis, visualization, and machine learning, equipping me with practical skills highly relevant in today's data-driven landscape. By working with real-world datasets and industry-standard tools, I enhanced my ability to uncover insights, craft impactful visualizations, and develop predictive models to address complex problems.
+Earned in September 2023, this 10-course certificate program provided comprehensive training in the data science lifecycle—from data collection and cleaning to model development and deployment. It emphasized practical applications using real-world datasets, with tools like Pandas, Scikit-learn, SQL, and Matplotlib.
 
-To view my certificate of completion awarded to me by Coursera and IBM, please click [here](/assets/certificates/ibmdatasciencecertificate.pdf).
+Projects covered exploratory data analysis, predictive modeling, dashboards, and more—enhancing my ability to draw actionable insights from complex data.
 
-Skills learned include: `Classification`, `Clustering`, `Data Analysis`, `Data Mining`, `Data Science`, `Data Visualization`, `GitHub`, `Jupyter Notebooks`, `Machine Learning`, `Matplotlib`, `NumPy`, `Pandas`, `Python`, `Recommender Systems`, `Regression`, `SQL`, `SciPy`, `Scikit-learn`, `Seaborn`.
-{: .notice--info}
+To view my IBM Data Science Professional Certificate of completion awarded by Coursera and IBM, please click [View Certificate](/assets/certificates/ibmdatasciencecertificate.pdf).
 
----
-
-# Currently In Progress: #
-
-## DeepLearning.AI Deep Learning Specialization ## 
-
-![image-center](/assets/images/deeplearningaideeplearning.png){:.align-center} 
-
-I am currently enrolled in the Deep Learning Specialization offered by DeepLearning.AI on Coursera. This comprehensive program, also taught by Andrew Ng, explores the foundations and advanced concepts of deep learning. Through five courses, I am mastering the theory and practical implementation of various neural network architectures, including Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), LSTMs, and Transformers.
-
-The specialization emphasizes hands-on experience with Python and TensorFlow, allowing me to build models for applications such as image recognition, neural style transfer, natural language processing, and more. Additionally, I am gaining insights into optimization techniques like Batch Normalization, Dropout, and Xavier initialization, as well as strategies for reducing errors and improving model performance.
-
-Skills I am developing: `TensorFlow`, `Convolutional Neural Networks`, `Recurrent Neural Networks`, `Transformers`, `Neural Style Transfer`, `Hyperparameter Tuning`, `Batch Normalization`, `Sequence Modeling`, `HuggingFace`, `Natural Language Processing`.
+Skills learned include: `Data Analysis`, `Data Wrangling`, `Data Visualization`, `Classification`, `Regression`, `Clustering`, `Recommender Systems`, `Python`, `SQL`, `Pandas`, `NumPy`, `Scikit-learn`, `Seaborn`, `Matplotlib`, `GitHub`, `Jupyter Notebooks`, `Machine Learning`  
 {: .notice--info}
 
 ---

@@ -13,34 +13,44 @@ header:
 excerpt: "A compilation showcasing the challenging tasks I've tackled"
 ---
 
-# Personal #
+## Personal ##
 
-## Taylor Swift Song Data Analysis ##
+### Taylor Swift Song Data Analysis ###
 
 ![image-center](/assets/images/taylor_swift.png){: .align-center}
 
-* Extracted data from the Spotify API using Python scripting to gather comprehensive song attributes, collecting data for over 500 tracks.
-* Cleaned raw data by handling missing values, removing duplicates, and refining the dataset, improving data quality and accuracy by 62%.
-* Performed exploratory data analysis and created meaningful visualizations using Matplotlib to identify trends in Taylor Swift’s music, highlighting key patterns across 10+ albums.
+* Extracted track data from the Spotify API using Python to analyze key audio features (tempo, energy, and danceability).
+* Cleaned and normalized raw data using Pandas; removed nulls and handled duplicates.
+* Created Matplotlib visualizations to explore trends in Taylor Swift’s music over time.
 
-Click <a href="https://github.com/rodrigues-oscar/Taylor-Swift-Song-Analysis">here</a> to check out the GitHub repository for this project.
+Click [this link to view the Taylor Swift Song Analysis GitHub repository](https://github.com/rodrigues-oscar/Taylor-Swift-Song-Analysis) for more details about this project.
 
-# Professional #
+### Traffic Sign Recognition Using Machine Learning ###
 
-## Quantifying Vehicle Steering Discrepancies ##
+![image-center](/assets/images/traffic_sign.png){: .align-center}
 
-![image-center](/assets/images/steering.png){: .align-center} 
+* Developed a convolutional neural network in Python using Keras and TensorFlow to classify traffic signs from image data.
+* Achieved 95.8% test accuracy across over 1,000 images, using image augmentation and dropout to improve generalization.
+* Demonstrated real-time object classification performance in simulation and documented findings in a project report.
+
+## Professional ##
+
+### Quantifying Vehicle Steering Discrepancies ###
+
+![image-center](/assets/images/steering.png){: .align-center}
 
 **Contribution:**
-* Restructured and normalized over 500 JSON log file records using Pandas to enable structured analysis of steering behavior and identify discrepancies, improving data accessibility for deeper analysis.
-* Employed Matplotlib to visualize steering angles and vehicle trajectories, facilitating the visual identification of steering discrepancies. 
-* Utilized feature engineering to optimize a logistic regression model designed for predicting steering discrepancies, successfully achieving an accuracy rate of 93.4%.
+
+* Restructured and normalized 500+ JSON log files using Pandas to enable structured analysis of steering behavior across autonomous vehicle test data.
+* Visualized vehicle trajectory and signal data with Matplotlib to identify erratic steering patterns from 50+ vehicle tests, contributing to feature root-cause analysis.
+* Engineered features and trained a logistic regression model to detect steering anomalies, achieving 93.4% accuracy and improving early error detection.
 
 ## Proactive Road Construction Detection System ##
 
-![image-center](/assets/images/construction.png){: .align-center} 
+![image-center](/assets/images/construction.png){: .align-center}
 
 **Contribution:**
-* Leveraged BeautifulSoup to web scrape construction-related data from Department of Transportation (DOT) websites across states, ensuring real-time access to critical information.
-* Visualized vehicle trajectory and signal data using Matplotlib to identify patterns associated with erratic steering behavior in autonomous vehicles, analyzing data from 50+ vehicle tests to uncover key contributing factors.
-* Optimized a logistic regression model to predict erratic steering behavior through feature engineering, achieving an accuracy rate of 93.4%, enhancing predictive reliability.
+
+* Scraped construction and road closure data from 48 Department of Transportation (DOT) websites using Python (BeautifulSoup) to anticipate road hazards and reduce reliance on evasive event logs.
+* Cleaned and normalized raw HTML data with Pandas, ensuring consistent, high-quality inputs for system integration and automation.
+* Built an automated notification pipeline to preemptively flag high-risk construction zones, enabling preemptive disabling of ADAS features and reducing customer-reported issues.

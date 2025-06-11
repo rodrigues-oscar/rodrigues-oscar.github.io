@@ -12,17 +12,18 @@ header:
 excerpt: ""
 ---
 
-# About Me #
+## About Me ##
 
-Hello! My name is Oscar, and I’m a Data Analyst and aspiring Data Scientist.
+Hello! I’m Oscar Rodrigues - a Data Scientist with 4+ years of experience transforming raw data into actionable insights through analytics, automation, and machine learning.
 
-I bring 4 years of experience as an analyst in Business Intelligence and Operations, where I’ve honed my skills in data analytics, statistical analysis, and Python/SQL programming. My background in Electrical Engineering has provided me with a strong technical foundation, which I continue to build upon through professional development.
+With a background in Electrical Engineering and a proven track record in Business Intelligence and Operations, I specialize in using tools like Python, SQL, and cloud platforms to build scalable data solutions. My work has contributed to projects in autonomous vehicles, manufacturing, and cost optimization, delivering measurable impact such as $1.3M in savings.
 
-In my free time, I’m diving deeper into machine learning and deep learning, taking on online certifications and specializations to expand my expertise and tackle new challenges in the field.
+I’m currently deepening my expertise in deep learning, completing the DeepLearning.AI Specialization, and continuously seeking opportunities to apply AI in real-world scenarios.
 
-Feel free to reach out—I’m always excited to connect and collaborate!
+Let’s connect - I’m always excited to collaborate on data-driven products, AI innovations, or anything in the ML/DS ecosystem.
 
-# Why am I passionate about Data Science? #
+## Why am I passionate about Data Science? ##
 
-* **Exploring New Industries**: Every project is an opportunity to dive into a new company or industry, helping me better understand the data and its context. By the time a project is complete, I’ve gained valuable insights into the industry and developed a deep appreciation for the people working in that field and the complexities of their roles.
-* **The Art of Data Cleaning**: There’s something uniquely satisfying about transforming messy, unstructured data into a gorgeous, well-organized dataset. While it can be a time-intensive process, the reward of seeing clean, usable data feels as gratifying as relaxing after a productive day—it’s the foundation of meaningful analysis and impactful insights.
+* **Automation and Efficiency**: There's something deeply satisfying about automating manual workflows or designing pipelines that reduce repetitive work. Whether it’s ETL jobs, alerting systems, or dashboards, I enjoy architecting solutions that free up human time for more strategic thinking.
+* **Working Across Domains**: Data science is one of the few fields that lets me collaborate with experts across business, engineering, and product. I enjoy diving into diverse industries - from automotive to healthcare - learning how their systems work, and translating data into actionable strategies tailored to their unique challenges.
+* **Continuous Learning**: The field evolves rapidly, with new tools, models, and research emerging every year. I’m constantly learning — whether it's through online specializations, technical books, or real-world projects — and that lifelong learning keeps me sharp, curious, and adaptable.
