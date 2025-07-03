@@ -45,7 +45,7 @@ Click [this link to view the Taylor Swift Song Analysis GitHub repository](https
 * Visualized vehicle trajectory and signal data with Matplotlib to identify erratic steering patterns from 50+ vehicle tests, contributing to feature root-cause analysis.
 * Engineered features and trained a logistic regression model to detect steering anomalies, achieving 93.4% accuracy and improving early error detection.
 
-## Proactive Road Construction Detection System ##
+### Proactive Road Construction Detection System ###
 
 ![image-center](/assets/images/construction.png){: .align-center}
 
