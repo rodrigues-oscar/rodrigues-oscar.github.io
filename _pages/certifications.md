@@ -15,22 +15,20 @@ header:
 excerpt: "Highlighting my commitment towards continuing education"
 ---
 
-## Currently In Progress
+## Completed Certifications
 
 ### DeepLearning.AI Deep Learning Specialization
 
 ![image-center](/assets/images/deeplearningaideeplearning.png){:.align-center}
 
-Currently pursuing this advanced series on neural networks, which dives into core deep learning architectures and training strategies. It includes practical implementation of CNNs, RNNs, LSTMs, and Transformers using TensorFlow and Python.
+Completed an advanced series on neural networks in January 2026, covering core deep learning architectures and modern training strategies. The program involved building and optimizing CNNs, RNNs, LSTMs, and Transformers using TensorFlow and Python.
 
-By completing hands-on assignments across applications like image recognition, NLP, and neural style transfer, I'm deepening my understanding of model optimization, architecture design, and training dynamics.
+Through hands‑on projects spanning image recognition, natural language processing, and neural style transfer, I strengthened my understanding of model optimization, architecture design, and training dynamics, gaining practical experience in implementing and evaluating state‑of‑the‑art deep learning systems.
 
 Skills being developed: `TensorFlow`, `Convolutional Neural Networks (CNNs)`, `Recurrent Neural Networks (RNNs)`, `Sequence Modeling`, `Natural Language Processing (NLP)`, `Neural Style Transfer`, `Transformers`, `HuggingFace`, `Dropout`, `Batch Normalization`, `Hyperparameter Tuning`  
 {: .notice--info}
 
 ---
-
-## Completed Certifications
 
 ### DeepLearning.AI Machine Learning Specialization
 
