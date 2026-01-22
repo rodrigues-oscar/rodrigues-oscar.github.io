@@ -1,0 +1,919 @@
+/* ==========================================================================
+   Precision Data Skin - Dark Technical Theme
+   Custom skin for Data Science Portfolio
+   ========================================================================== */
+
+/* Fonts loaded via _includes/head/custom.html for better performance */
+
+/* ==========================================================================
+   Color Variables
+   ========================================================================== */
+
+/* Core Background Colors */
+$background-color: #0a0e17 !default;
+$code-background-color: #141c2b !default;
+$code-background-color-dark: #0f1520 !default;
+
+/* Text Colors */
+$text-color: #f0f4f8 !default;
+$muted-text-color: #94a3b8 !default;
+$masthead-link-color: #94a3b8 !default;
+$masthead-link-color-hover: #00d4aa !default;
+
+/* Accent Colors - Teal/Cyan */
+$primary-color: #00d4aa !default;
+$success-color: #00d4aa !default;
+$warning-color: #f59e0b !default;
+$danger-color: #ef4444 !default;
+$info-color: #00b4d8 !default;
+$focus-color: #00d4aa !default;
+$active-color: rgba(0, 212, 170, 0.2) !default;
+
+/* Border Colors */
+$border-color: rgba(148, 163, 184, 0.15) !default;
+$footer-background-color: #0a0e17 !default;
+$form-background-color: #141c2b !default;
+
+/* Link Colors */
+$link-color: #00d4aa !default;
+$link-color-hover: #00e8bb !default;
+$link-color-visited: #00b4d8 !default;
+
+/* Navigation */
+$navicon-link-color-hover: #00d4aa !default;
+
+/* Syntax Highlighting - Custom dark palette */
+$base00: #0a0e17 !default;
+$base01: #0f1520 !default;
+$base02: #141c2b !default;
+$base03: #64748b !default;
+$base04: #94a3b8 !default;
+$base05: #f0f4f8 !default;
+$base06: #f8fafc !default;
+$base07: #ffffff !default;
+$base08: #ff6b6b !default;
+$base09: #f78c6c !default;
+$base0a: #ffd93d !default;
+$base0b: #00d4aa !default;
+$base0c: #00b4d8 !default;
+$base0d: #60a5fa !default;
+$base0e: #c084fc !default;
+$base0f: #f472b6 !default;
+
+/* ==========================================================================
+   Typography Overrides
+   ========================================================================== */
+
+$global-font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif !default;
+$header-font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif !default;
+$caption-font-family: 'Outfit', Georgia, serif !default;
+$monospace: 'JetBrains Mono', Monaco, Consolas, monospace !default;
+
+/* ==========================================================================
+   Global Site Overrides
+   ========================================================================== */
+
+body {
+  background: $background-color;
+
+  /* Subtle grid background */
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      linear-gradient(rgba(0, 212, 170, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 212, 170, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: -1;
+    mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black 40%, transparent 100%);
+  }
+}
+
+/* ==========================================================================
+   Masthead / Navigation
+   ========================================================================== */
+
+.masthead {
+  background: rgba(10, 14, 23, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border-color;
+
+  &__inner-wrap {
+    padding: 0.75em 1em;
+  }
+}
+
+.site-logo img {
+  max-height: 2.5rem;
+  filter: brightness(1.1);
+}
+
+.site-title {
+  color: $text-color;
+  font-family: $header-font-family;
+  font-weight: 600;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    color: $muted-text-color;
+    font-family: $global-font-family;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .visible-links a {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(135deg, #00d4aa 0%, #00b4d8 100%);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  button {
+    color: $muted-text-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.navicon {
+  background: $muted-text-color;
+
+  &::before,
+  &::after {
+    background: $muted-text-color;
+  }
+}
+
+/* Hidden navigation dropdown */
+.hidden-links {
+  background: #0f1520;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+
+  a {
+    color: $muted-text-color;
+    border-bottom: 1px solid $border-color;
+
+    &:hover {
+      color: $primary-color;
+      background: rgba(0, 212, 170, 0.05);
+    }
+  }
+}
+
+/* ==========================================================================
+   Page Hero / Header
+   ========================================================================== */
+
+.page__hero {
+  &--overlay {
+    background-color: #0a0e17;
+
+    .wrapper {
+      padding: 4em 1em;
+    }
+
+    .page__title {
+      font-family: $header-font-family;
+      font-weight: 700;
+      font-size: 2.5em;
+      text-shadow: none;
+
+      /* Gradient text effect */
+      background: linear-gradient(135deg, #f0f4f8 0%, #00d4aa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page__lead {
+      color: $muted-text-color;
+      font-family: $global-font-family;
+      font-size: 1.1em;
+      text-shadow: none;
+    }
+
+    /* Gradient overlay */
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(to top, $background-color, transparent);
+      pointer-events: none;
+    }
+  }
+}
+
+/* ==========================================================================
+   Main Content Area
+   ========================================================================== */
+
+#main {
+  background: $background-color;
+}
+
+.page {
+  background: transparent;
+}
+
+.page__content {
+  font-family: $global-font-family;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-family;
+    color: $text-color;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+
+    /* Section number styling */
+    &::before {
+      color: $primary-color;
+      opacity: 0.6;
+    }
+  }
+
+  h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 0.5em;
+
+    &::before {
+      content: '//';
+      margin-right: 0.5em;
+      font-family: $monospace;
+      font-weight: 400;
+    }
+  }
+
+  h3 {
+    font-size: 1.25em;
+    color: $muted-text-color;
+  }
+
+  p {
+    color: $muted-text-color;
+    line-height: 1.8;
+    margin-bottom: 1.25em;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $link-color-hover;
+      border-bottom-color: $primary-color;
+    }
+  }
+
+  strong {
+    color: $text-color;
+    font-weight: 600;
+  }
+
+  ul, ol {
+    color: $muted-text-color;
+
+    li {
+      margin-bottom: 0.5em;
+
+      &::marker {
+        color: $primary-color;
+      }
+    }
+  }
+
+  /* Code blocks */
+  code {
+    font-family: $monospace;
+    font-size: 0.85em;
+    background: $code-background-color;
+    color: $primary-color;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+  }
+
+  pre {
+    background: $code-background-color;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+
+    code {
+      background: transparent;
+      border: none;
+      padding: 0;
+      color: $text-color;
+    }
+  }
+
+  /* Blockquotes */
+  blockquote {
+    border-left: 3px solid $primary-color;
+    background: rgba(0, 212, 170, 0.05);
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    border-radius: 0 8px 8px 0;
+
+    p {
+      color: $muted-text-color;
+      margin-bottom: 0;
+    }
+  }
+
+  /* Tables */
+  table {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    overflow: hidden;
+
+    th {
+      background: $code-background-color;
+      color: $text-color;
+      font-weight: 600;
+      border-bottom: 1px solid $border-color;
+    }
+
+    td {
+      background: transparent;
+      color: $muted-text-color;
+      border-bottom: 1px solid $border-color;
+    }
+
+    tr:hover td {
+      background: rgba(0, 212, 170, 0.03);
+    }
+  }
+}
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+.page__content img {
+  border-radius: 12px;
+  border: 1px solid $border-color;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 212, 170, 0.3);
+  }
+}
+
+/* ==========================================================================
+   Sidebar / Author Profile
+   ========================================================================== */
+
+.sidebar {
+  opacity: 1;
+}
+
+.author__avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+
+  img {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    border: 3px solid $code-background-color;
+    box-shadow: 0 0 30px rgba(0, 212, 170, 0.2);
+    transition: all 0.3s ease;
+    object-fit: cover;
+    object-position: center top;
+
+    &:hover {
+      border-color: $primary-color;
+      box-shadow: 0 0 40px rgba(0, 212, 170, 0.3);
+      transform: scale(1.02);
+    }
+  }
+}
+
+.author__content {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.author__name {
+  font-family: $header-font-family;
+  font-weight: 600;
+  font-size: 1.25em;
+  color: $text-color;
+  margin-bottom: 0.25em;
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.author__bio {
+  color: $primary-color;
+  font-size: 0.85em;
+  font-family: $monospace;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.author__urls-wrapper {
+  button {
+    background: $code-background-color;
+    border: 1px solid $border-color;
+    color: $muted-text-color;
+    font-family: $global-font-family;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    width: 100%;
+    margin-bottom: 0.5em;
+
+    &:hover {
+      background: rgba(0, 212, 170, 0.1);
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+}
+
+.author__urls {
+  background: #0f1520;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 0.5em 0;
+
+  &.social-icons {
+    li {
+      display: flex;
+      align-items: center;
+      border-bottom: none;
+      padding: 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0.6em 1em;
+        color: $muted-text-color;
+        font-size: 0.875em;
+        transition: all 0.2s ease;
+        border-bottom: none;
+
+        &:hover {
+          color: $primary-color;
+          background: rgba(0, 212, 170, 0.05);
+        }
+
+        i {
+          width: 20px;
+          margin-right: 0.75em;
+          text-align: center;
+          flex-shrink: 0;
+        }
+
+        .label {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  li {
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+/* Icon colors - ensure visibility on dark background */
+.social-icons,
+.author__urls {
+  .fas, .fab, .far, .fa {
+    color: $primary-color !important;
+  }
+
+  /* GitHub icon specifically */
+  .fa-github {
+    color: #f0f4f8 !important;
+  }
+
+  /* LinkedIn icon */
+  .fa-linkedin {
+    color: #0A66C2 !important;
+  }
+
+  /* Email icon */
+  .fa-envelope {
+    color: $primary-color !important;
+  }
+}
+
+/* Location styling */
+.author__urls li:first-child {
+  padding: 0.6em 1em;
+
+  .fa-map-marker-alt {
+    color: $primary-color !important;
+    width: 20px;
+    margin-right: 0.75em;
+    text-align: center;
+  }
+
+  span {
+    color: $muted-text-color;
+  }
+}
+
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+.toc {
+  background: $code-background-color;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+
+  .nav__title {
+    background: linear-gradient(135deg, #00d4aa 0%, #00b4d8 100%);
+    color: $background-color;
+    font-family: $header-font-family;
+    font-weight: 600;
+    font-size: 0.85em;
+    border-radius: 11px 11px 0 0;
+
+    i {
+      margin-right: 0.5em;
+    }
+  }
+
+  a {
+    color: $muted-text-color;
+    font-size: 0.85em;
+    border-bottom: 1px solid $border-color;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $primary-color;
+      background: rgba(0, 212, 170, 0.05);
+    }
+  }
+
+  .active a {
+    color: $primary-color;
+    background: rgba(0, 212, 170, 0.1);
+    border-left: 3px solid $primary-color;
+  }
+}
+
+/* ==========================================================================
+   Notices
+   ========================================================================== */
+
+.notice,
+.notice--primary,
+.notice--info,
+.notice--warning,
+.notice--success,
+.notice--danger {
+  background: $code-background-color;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  color: $muted-text-color;
+  font-size: 0.9em;
+
+  a {
+    color: $primary-color;
+  }
+
+  code {
+    background: rgba(0, 212, 170, 0.1);
+    color: $primary-color;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 0.85em;
+    border: none;
+  }
+}
+
+.notice--info {
+  border-left: 4px solid $info-color;
+}
+
+.notice--success {
+  border-left: 4px solid $success-color;
+}
+
+.notice--warning {
+  border-left: 4px solid $warning-color;
+}
+
+.notice--danger {
+  border-left: 4px solid $danger-color;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+  font-family: $global-font-family;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+
+  &--primary {
+    background: linear-gradient(135deg, #00d4aa 0%, #00b4d8 100%);
+    color: $background-color;
+    border: none;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 212, 170, 0.3);
+    }
+  }
+
+  &--inverse {
+    background: $code-background-color;
+    color: $muted-text-color;
+    border: 1px solid $border-color;
+
+    &:hover {
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+
+  &--light-outline {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: $text-color;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.page__footer {
+  background: $background-color;
+  border-top: 1px solid $border-color;
+
+  footer {
+    color: $muted-text-color;
+    font-family: $global-font-family;
+  }
+
+  a {
+    color: $muted-text-color;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .fa, .fas, .fab {
+    color: $primary-color;
+  }
+}
+
+/* ==========================================================================
+   Page Meta
+   ========================================================================== */
+
+.page__meta {
+  color: $muted-text-color;
+  font-size: 0.8em;
+  font-family: $monospace;
+  border-top: 1px solid $border-color;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.page__taxonomy {
+  .page__taxonomy-item {
+    background: $code-background-color;
+    color: $muted-text-color;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    font-size: 0.8em;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: rgba(0, 212, 170, 0.1);
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.pagination {
+  .current {
+    background: linear-gradient(135deg, #00d4aa 0%, #00b4d8 100%);
+    color: $background-color;
+  }
+
+  a {
+    color: $muted-text-color;
+    border: 1px solid $border-color;
+
+    &:hover {
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+}
+
+/* ==========================================================================
+   Search
+   ========================================================================== */
+
+.search-content {
+  background: $background-color;
+
+  .search-input {
+    background: $code-background-color;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    color: $text-color;
+    font-family: $global-font-family;
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+    }
+  }
+}
+
+.results__found {
+  color: $muted-text-color;
+}
+
+.archive__item-title {
+  color: $text-color;
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.archive__item-excerpt {
+  color: $muted-text-color;
+}
+
+/* ==========================================================================
+   Archive Pages
+   ========================================================================== */
+
+.archive__item {
+  background: $code-background-color;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(0, 212, 170, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page__content {
+  animation: fadeInUp 0.6s ease;
+}
+
+/* ==========================================================================
+   Scrollbar Styling
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $border-color;
+  border-radius: 4px;
+
+  &:hover {
+    background: $muted-text-color;
+  }
+}
+
+/* ==========================================================================
+   Selection Styling
+   ========================================================================== */
+
+::selection {
+  background: rgba(0, 212, 170, 0.3);
+  color: $text-color;
+}
+
+::-moz-selection {
+  background: rgba(0, 212, 170, 0.3);
+  color: $text-color;
+}
+
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .page__hero--overlay {
+    .page__title {
+      font-size: 2em;
+    }
+  }
+
+  .page__content h2 {
+    font-size: 1.25em;
+  }
+}

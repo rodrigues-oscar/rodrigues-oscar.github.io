@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Certifications Page Specific Styles
+   ========================================================================== */
+
+/* Override default content styles for certifications page */
+.certifications-page .page__content {
+  animation: fadeInUp 0.6s ease;
+}
+
+.certifications-page h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f0f4f8;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.certifications-page h2::before {
+  content: '//';
+  font-family: 'JetBrains Mono', monospace;
+  color: #00b4d8;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.certifications-page h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00d4aa;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.certifications-page p {
+  font-family: 'Outfit', sans-serif;
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.certifications-page strong {
+  color: #f0f4f8;
+}
+
+.certifications-page a {
+  color: #0a0e17;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.certifications-page a:hover {
+  color: #00e8bb;
+  border-bottom-color: #00d4aa;
+}
+
+.certifications-page img {
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  margin: 1.5rem 0;
+  max-width: 200px;
+  transition: all 0.3s ease;
+}
+
+.certifications-page img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 212, 170, 0.3);
+}
+
+.certifications-page hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.2), transparent);
+  margin: 3rem 0;
+}
+
+/* Notice styling */
+.certifications-page .notice--info {
+  background: rgba(20, 28, 43, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-left: 4px solid #00b4d8;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.certifications-page .notice--info code {
+  background: rgba(0, 212, 170, 0.1);
+  color: #00d4aa;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-family: 'JetBrains Mono', monospace;
+  border: none;
+}

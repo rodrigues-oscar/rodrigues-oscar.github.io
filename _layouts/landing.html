@@ -1,0 +1,309 @@
+---
+layout: default
+---
+
+<div class="landing-page">
+  <!-- Animated background grid -->
+  <div class="grid-background">
+    <div class="grid-lines"></div>
+    <div class="floating-nodes">
+      <span class="node node-1"></span>
+      <span class="node node-2"></span>
+      <span class="node node-3"></span>
+      <span class="node node-4"></span>
+      <span class="node node-5"></span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring avatar-ring-2"></div>
+        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="hero-avatar">
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="name-first">Oscar</span>
+          <span class="name-last">Rodrigues</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="title-decorator"></span>
+          <h2 class="hero-title">Data Scientist <span class="title-separator">&</span> ML Engineer</h2>
+          <span class="title-decorator"></span>
+        </div>
+        <p class="hero-tagline">Transforming complex data into scalable, high-impact solutions</p>
+      </div>
+
+      <div class="hero-location">
+        <div class="location-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <span class="location-text">Ontario, Canada</span>
+        <span class="location-divider">|</span>
+        <span class="location-availability">Open to opportunities</span>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">4+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">$1.3M+</span>
+          <span class="stat-label">Cost Savings Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Specializations</span>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="/projects/" class="cta-primary">
+          <span>View Projects</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="/certifications/" class="cta-secondary">
+          <span>Certifications</span>
+        </a>
+      </div>
+
+      <div class="social-links">
+        {% for link in site.author.links %}
+          <a href="{{ link.url }}" class="social-link" title="{{ link.label }}" target="_blank" rel="noopener">
+            <i class="{{ link.icon }}"></i>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-lead">I'm a Data Scientist with a passion for turning data into decisions.</p>
+          <p>With a foundation in <strong>Electrical Engineering</strong> and hands-on experience in Business Intelligence and Operations, I specialize in building robust data pipelines and ML-driven systems using Python, SQL, and cloud technologies.</p>
+          <p>My work spans <strong>autonomous vehicles</strong>, <strong>manufacturing</strong>, and <strong>cost optimization</strong>, including delivering $1.3M in measurable savings through data-driven initiatives.</p>
+          <p>I recently completed the <strong>DeepLearning.AI Specialization</strong> (Jan 2026), implementing CNNs, RNNs, LSTMs, and Transformers across real-world tasks like image recognition, NLP, and neural style transfer.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Passion Section -->
+  <section class="passion-section" id="passion">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Why I'm Passionate About Data Science</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="passion-grid">
+        <div class="passion-card">
+          <div class="passion-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Automation & Efficiency</h3>
+          <p>Designing systems that eliminate repetitive work through ETL pipelines, alerting frameworks, and intelligent dashboards that empower teams to focus on high-value decisions.</p>
+        </div>
+
+        <div class="passion-card">
+          <div class="passion-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3>Cross-Domain Collaboration</h3>
+          <p>Partnering with experts across engineering, business, and product to translate complex challenges into actionable, data-driven solutions that create real impact.</p>
+        </div>
+
+        <div class="passion-card">
+          <div class="passion-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22,4 12,14.01 9,11.01"/>
+            </svg>
+          </div>
+          <h3>Continuous Learning</h3>
+          <p>Staying sharp through advanced coursework, technical reading, and hands-on experimentation with cutting-edge models and emerging research in the field.</p>
+        </div>
+
+        <div class="passion-card">
+          <div class="passion-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h3>Problem Solving</h3>
+          <p>Thriving on the challenge of uncovering patterns in messy data, building predictive models, and turning abstract business questions into concrete, measurable outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16,18 22,12 16,6"/>
+                <polyline points="8,6 2,12 8,18"/>
+              </svg>
+            </span>
+            Languages & Tools
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">Linux/Bash</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </span>
+            Data & ML Libraries
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Keras</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">SciPy</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              </svg>
+            </span>
+            Deep Learning & AI
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">CNNs</span>
+            <span class="skill-tag">RNNs</span>
+            <span class="skill-tag">LSTMs</span>
+            <span class="skill-tag">Transformers</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">HuggingFace</span>
+            <span class="skill-tag">Neural Style Transfer</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </span>
+            Visualization & BI
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">Plotly</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Dashboards</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </span>
+            Data Engineering
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">ETL Pipelines</span>
+            <span class="skill-tag">Data Wrangling</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Apache Spark</span>
+            <span class="skill-tag">Airflow</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22,4 12,14.01 9,11.01"/>
+              </svg>
+            </span>
+            ML Techniques
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Regression</span>
+            <span class="skill-tag">Classification</span>
+            <span class="skill-tag">Clustering</span>
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">Hyperparameter Tuning</span>
+            <span class="skill-tag">Model Evaluation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

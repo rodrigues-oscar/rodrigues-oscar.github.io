@@ -13,7 +13,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "precision" # Custom dark theme - "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 
 # Site Settings
@@ -27,15 +27,15 @@ url                      : "https://rodrigues-oscar.github.io"
 # baseurl                  : " "
 repository               : "rodrigues-oscar/rodrigues-oscar.github.io"
 teaser                   : "/assets/images/headshot_circle.png"
-logo                     : "/assets/images/logo.png"
+logo                     : "/assets/images/logo-dark.svg"
 masthead_title           : " "
 
 
 # Site Author
 author:
   name        : "Oscar Rodrigues"
-  avatar      : "/assets/images/headshot_circle.png"
-  bio         : ""
+  avatar      : "/assets/images/profile_picture.png"
+  bio         : "Data Scientist & ML Engineer"
   location    : "Ontario, Canada"
   links:
     - label: "Email"

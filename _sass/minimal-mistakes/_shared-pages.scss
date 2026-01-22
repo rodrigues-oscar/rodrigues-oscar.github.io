@@ -1,0 +1,295 @@
+/* ==========================================================================
+   Shared Page Styles (Projects & Certifications)
+   ========================================================================== */
+
+/* Common page structure */
+.projects-page,
+.certifications-page {
+  background: var(--landing-bg-primary, #0a0e17);
+  min-height: 100vh;
+}
+
+/* Page Header - shared structure */
+.projects-page .page-header,
+.certifications-page .page-header {
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.projects-page .page-header {
+  background: linear-gradient(180deg, rgba(0, 212, 170, 0.03) 0%, transparent 100%);
+}
+
+.certifications-page .page-header {
+  background: linear-gradient(180deg, rgba(0, 180, 216, 0.03) 0%, transparent 100%);
+}
+
+/* Grid overlay */
+.projects-page .page-header::before,
+.certifications-page .page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 0%, black 20%, transparent 70%);
+  pointer-events: none;
+}
+
+.projects-page .page-header::before {
+  background-image:
+    linear-gradient(rgba(0, 212, 170, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 170, 0.03) 1px, transparent 1px);
+}
+
+.certifications-page .page-header::before {
+  background-image:
+    linear-gradient(rgba(0, 180, 216, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 180, 216, 0.03) 1px, transparent 1px);
+}
+
+.projects-page .page-header-content,
+.certifications-page .page-header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects-page .page-label,
+.certifications-page .page-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.projects-page .page-label {
+  color: #00d4aa;
+}
+
+.certifications-page .page-label {
+  color: #00b4d8;
+}
+
+.projects-page .page-title,
+.certifications-page .page-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.projects-page .page-title {
+  background: linear-gradient(135deg, #f0f4f8 0%, #00d4aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.certifications-page .page-title {
+  background: linear-gradient(135deg, #f0f4f8 0%, #00b4d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects-page .page-description,
+.certifications-page .page-description {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  color: #94a3b8;
+  margin: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Main layout */
+.projects-main,
+.certifications-main {
+  display: flex;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.projects-content,
+.certifications-content {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+/* Shared Sidebar Styles */
+.projects-page .sidebar,
+.certifications-page .sidebar {
+  flex-shrink: 0;
+  width: 250px;
+  padding-right: 1rem;
+}
+
+.projects-page .author__avatar,
+.certifications-page .author__avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.projects-page .author__avatar img,
+.certifications-page .author__avatar img {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid #141c2b;
+  box-shadow: 0 0 30px rgba(0, 212, 170, 0.2);
+}
+
+.projects-page .author__content,
+.certifications-page .author__content {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.projects-page .author__name,
+.certifications-page .author__name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f0f4f8;
+}
+
+.projects-page .author__name a,
+.certifications-page .author__name a {
+  color: #f0f4f8;
+  text-decoration: none;
+}
+
+.projects-page .author__bio,
+.certifications-page .author__bio {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: #00d4aa !important;
+  text-align: center !important;
+  display: block;
+  width: 100%;
+}
+
+.projects-page .author__bio p,
+.certifications-page .author__bio p {
+  color: #00d4aa !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+.projects-page .author__urls-wrapper,
+.certifications-page .author__urls-wrapper {
+  text-align: center;
+}
+
+.projects-page .author__urls,
+.certifications-page .author__urls {
+  background: #0f1520;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+.projects-page .author__urls li,
+.certifications-page .author__urls li {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.projects-page .author__urls li a,
+.certifications-page .author__urls li a {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.projects-page .author__urls li a:hover,
+.certifications-page .author__urls li a:hover {
+  color: #00d4aa;
+}
+
+.projects-page .author__urls li i,
+.certifications-page .author__urls li i {
+  width: 20px;
+  color: #00d4aa;
+}
+
+.projects-page .author__urls .fa-github,
+.certifications-page .author__urls .fa-github {
+  color: #f0f4f8 !important;
+}
+
+/* Shared Section Heading */
+.section-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f0f4f8;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.section-heading::before {
+  content: '//';
+  font-family: 'JetBrains Mono', monospace;
+  color: #00d4aa;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* Shared Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive - Shared */
+@media (max-width: 1024px) {
+  .projects-main,
+  .certifications-main {
+    flex-direction: column;
+  }
+
+  .projects-content,
+  .certifications-content {
+    padding-left: 0;
+  }
+
+  .projects-page .sidebar,
+  .certifications-page .sidebar {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+}
